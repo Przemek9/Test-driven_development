@@ -14,7 +14,8 @@ namespace Tests
             int actual = Class1.Choose_max(3, 1);
             Assert.AreEqual(expected, actual);
         }
-        
+
+        [TestMethod]
         public void TestMin()
         {
 
@@ -22,5 +23,17 @@ namespace Tests
             int actual = Class1.Choose_min(5, 40);
             Assert.AreEqual(expected, actual);
         }
+
+        [TestMethod]
+        public void TestPositive()
+        {
+
+            bool expected = true;
+            int actual = Class1.Check_Positive(100);
+            Assert.AreEqual(expected, actual);
+        }
+
+
+
     }
 }
