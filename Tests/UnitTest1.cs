@@ -14,5 +14,13 @@ namespace Tests
             int actual = Class1.Choose_max(3, 1);
             Assert.AreEqual(expected, actual);
         }
+        
+        public void TestMin()
+        {
+
+            int expected = 5;
+            int actual = Class1.Choose_min(5, 40);
+            Assert.AreEqual(expected, actual);
+        }
     }
 }
